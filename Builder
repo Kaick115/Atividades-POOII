@@ -1,8 +1,10 @@
+package Builder;
 
 public interface Builder {
-    void setTipo(String tipo);
+    void reset();
     void setMotor(String motor);
-    void setPortas(int portas);
-    void setTransmissao(String transmissao);
-    void setCor(String cor);
+    void setGPS(String gps);
+    void setCompBordo(String compBordo);
+    void setBancos(int bancos);
 }
+

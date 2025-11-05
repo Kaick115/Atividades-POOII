@@ -1,0 +1,8 @@
+
+public interface Builder {
+    void setTipo(String tipo);
+    void setMotor(String motor);
+    void setPortas(int portas);
+    void setTransmissao(String transmissao);
+    void setCor(String cor);
+}

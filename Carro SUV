@@ -1,0 +1,33 @@
+package Builder;
+
+public class BuilderCarroSUV implements Builder {
+
+    private Carro carroSUV;
+
+    public void reset() {
+        carroSUV = new Carro();
+    }
+
+    public void setMotor(String motor) {
+        carroSUV.setMotor(motor);
+    }
+
+    public void setGPS(String gps) {
+        carroSUV.setGPS(gps);
+    }
+
+    public void setCompBordo(String compBordo) {
+        carroSUV.setCompBordo(compBordo);
+    }
+
+    public void setBancos(int bancos) {
+        carroSUV.setBancos(bancos);
+    }
+
+    public Carro getResult() {
+        return carroSUV;
+    }
+}
+
+
+

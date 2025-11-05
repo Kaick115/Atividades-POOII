@@ -1,0 +1,30 @@
+package Builder;
+
+public class BuilderCarroGrande implements Builder {
+
+    private Carro carroGrande;
+
+    public void reset() {
+        carroGrande = new Carro();
+    }
+
+    public void setMotor(String motor) {
+        carroGrande.setMotor(motor);
+    }
+
+    public void setGPS(String gps) {
+        carroGrande.setGPS(gps);
+    }
+
+    public void setCompBordo(String compBordo) {
+        carroGrande.setCompBordo(compBordo);
+    }
+
+    public void setBancos(int bancos) {
+        carroGrande.setBancos(bancos);
+    }
+
+    public Carro getResult() {
+        return carroGrande;
+    }
+}

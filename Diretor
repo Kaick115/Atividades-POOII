@@ -1,0 +1,32 @@
+package Builder;
+
+public class Diretor {
+
+    public void makeCarroNormal(BuilderCarroNormal builder) {
+        builder.reset();
+        builder.setMotor("1.2");
+        builder.setBancos(4);
+    }
+
+    public void makeCarroDeCorrida(BuilderCarroDeCorrida builder) {
+        builder.reset();
+        builder.setMotor("2.0 Turbo");
+        builder.setBancos(2);
+        builder.setGPS("GPS Corrida");
+        builder.setCompBordo("Painel Digital");
+    }
+
+    public void makeCarroSUV(BuilderCarroSUV builder) {
+        builder.reset();
+        builder.setMotor("2.5");
+        builder.setBancos(5);
+        builder.setGPS("GPS Plus");
+    }
+
+    public void makeCarroGrande(BuilderCarroGrande builder) {
+        builder.reset();
+        builder.setMotor("3.0 Diesel");
+        builder.setBancos(7);
+        builder.setCompBordo("CB Familiar");
+    }
+}

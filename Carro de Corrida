@@ -1,0 +1,30 @@
+package Builder;
+
+public class BuilderCarroCorrida implements Builder {
+
+    private Carro carroCorrida;
+
+    public void reset() {
+        carroCorrida = new Carro();
+    }
+
+    public void setMotor(String motor) {
+        carroCorrida.setMotor(motor);
+    }
+
+    public void setGPS(String gps) {
+        carroCorrida.setGPS(gps);
+    }
+
+    public void setCompBordo(String compBordo) {
+        carroCorrida.setCompBordo(compBordo);
+    }
+
+    public void setBancos(int bancos) {
+        carroCorrida.setBancos(bancos);
+    }
+
+    public Carro getResult() {
+        return carroCorrida;
+    }
+}
